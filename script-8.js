@@ -56,20 +56,61 @@ var trhead=document.createElement("tr");
 
 var th1=document.createElement("th");
 th1.setAttribute("scope","col");
-th1.innerHTML="First";
+th1.innerHTML="No";
 
 var th2=document.createElement("th");
 th2.setAttribute("scope","col");
-th2.innerHTML="Second";
+th2.innerHTML="First";
 
-trhead.append(th1,th2);
+var th3=document.createElement("th");
+th3.setAttribute("scope","col");
+th3.innerHTML="Last";
+
+var th3=document.createElement("th");
+th3.setAttribute("scope","col");
+th3.innerHTML="Last";
+
+var th4=document.createElement("th");
+th4.setAttribute("scope","col");
+th4.innerHTML="Handle";
+
+trhead.append(th1,th2,th3,th3,th4);
+thead.append(trhead);
+
+trhead.append(th1,th2,th3,th3,th4);
 thead.append(trhead);
 
 var tbody=document.createElement("tbody");
 var trbody=document.createElement("tr");
-var td1=createtrtd("td","Mark");
-var td2=createtrtd("td","otto");
-trbody.append(td1,td2);
+var td1=createtrtd("td","1");
+var td2=createtrtd("td","Mark");
+var td3=createtrtd("td","Otto");
+var td4=createtrtd("td","@mdo");
+trbody.append(td1,td2,td3,td4);
+tbody.append(trbody);
+
+table.append(thead,tbody);
+document.body.append(table);
+
+var tbody=document.createElement("tbody");
+var trbody=document.createElement("tr");
+var td1=createtrtd("td","2");
+var td2=createtrtd("td","jacob");
+var td3=createtrtd("td","Thornton");
+var td4=createtrtd("td","@fat");
+trbody.append(td1,td2,td3,td4);
+tbody.append(trbody);
+
+table.append(thead,tbody);
+document.body.append(table);
+
+var tbody=document.createElement("tbody");
+var trbody=document.createElement("tr");
+var td1=createtrtd("td","3");
+var td2=createtrtd("td","Larry");
+var td3=createtrtd("td","the Bird");
+var td4=createtrtd("td","@twitter");
+trbody.append(td1,td2,td3,td4);
 tbody.append(trbody);
 
 table.append(thead,tbody);
